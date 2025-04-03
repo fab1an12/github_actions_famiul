@@ -34,7 +34,7 @@ class Calculator:
 
 def get_input():
     """Get user input for operation and numbers."""
-    print("Calculator Operations: add (+), subtract (-), multiply (*), divide (/)")
+    print("Calculator Operations: add, subtract, multiply, divide")
     operation = input("Enter the operation you want to perform: ")
 
     try:
