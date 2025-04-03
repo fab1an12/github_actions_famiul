@@ -1,0 +1,15 @@
+name: Event PR
+
+on:
+  pull_request:
+    
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello world
+      run: echo "Hello, world!"
+    - name: Información adicional
+      run: echo "Este es el segundo paso del primer job"
+      
