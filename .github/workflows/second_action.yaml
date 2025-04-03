@@ -1,4 +1,4 @@
-name: first_action
+name: second_action
 
 on:
   workflow_dispatch:
