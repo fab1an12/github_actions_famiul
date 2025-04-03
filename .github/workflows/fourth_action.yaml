@@ -30,4 +30,4 @@ jobs:
     - name: Primer paso
       run: echo "Este es el primer paso del segundo job"
     - name: Segundo paso
-      run: echo ${{ github.event.inputs.debug_mode }}
+      run: echo ${{ github.event.inputs.name }}
