@@ -1,6 +1,8 @@
 name: first_action
+
 on:
   workflow_dispatch:
+  
 jobs:
   say_hello:
     runs-on: ubuntu-latest
