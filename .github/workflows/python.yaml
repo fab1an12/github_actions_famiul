@@ -28,3 +28,7 @@ jobs:
     - name: Run Linters
       run: |
         flake8 code/python
+
+    - name: Run Tests
+      run: |
+        python -m unittest code/python/test_calculator.py
