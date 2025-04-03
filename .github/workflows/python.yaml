@@ -41,4 +41,7 @@ jobs:
         coverage report -m
         coverage html
         coverage xml
-    
+    - name: Security Check
+      run: |
+        cd code/python
+        bandit -r .
