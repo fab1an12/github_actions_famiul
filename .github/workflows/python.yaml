@@ -33,3 +33,12 @@ jobs:
       run: |
         cd code/python
         python -m unittest test_calculator.py
+    
+    - name: Run Tests with Coverage
+      run: |
+        cd code/python
+        coverage run -m unittest test_calculator.py
+        coverage report -m
+        coverage html
+        coverage xml
+    
