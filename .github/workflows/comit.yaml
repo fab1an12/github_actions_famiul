@@ -24,4 +24,4 @@ jobs:
       - name: Hello world
         run: echo "Hello, world!"
       - name: Información adicional
-        run: echo ${{ github.event_name.inputs.debug_mode }}"
+        run: echo ${{ github.event_name.inputs.name }}"
