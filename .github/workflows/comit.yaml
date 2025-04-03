@@ -4,16 +4,24 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+    inputs:
+      name:
+        type: string
+        description: 'Nombre del usuario'
+        required: false
+        default: 'Mundo'
+      age:
+        type: boolean
+        description: '¿Es mayor de edad?'
+        required: false
+        default:  false
 
 jobs:
   hello_world:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Hello world
         run: echo "Hello, world!"
       - name: Información adicional
-        run: echo "Este es el segundo paso del primer job"
+        run: echo ${{ github.event_name.inputs.debug_mode }}"
