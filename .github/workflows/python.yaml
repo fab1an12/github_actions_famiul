@@ -31,4 +31,5 @@ jobs:
 
     - name: Run Tests
       run: |
-        python -m unittest code/python/test_calculator.py
+        cd code/python
+        python -m unittest test_calculator.py
